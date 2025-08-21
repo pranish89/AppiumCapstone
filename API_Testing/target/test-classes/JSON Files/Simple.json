@@ -1,0 +1,8 @@
+{
+	"employee": {
+	         "id" : 78,
+	         "name": "John Doe",
+	         "age": 30,
+	         "email": "Johndoe@example.com"
+	}
+}

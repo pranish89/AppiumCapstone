@@ -1,0 +1,13 @@
+1. Have structured JSON file.
+2. create seperate POJO kind of classes for seperate objects
+eg: key-value pair -->seperate class
+eg: list of values--->initialize as array
+3.Have 1 main class which includes all objects and references.
+4.generate getter & setter methods for all key-value pair
+5.override toString method in the main class to the format you need to generate
+6.same way override in sub class also and add the objects respectively in main class.
+7.for list of values in json files, add as list<String> in the instatantiate class.
+8.Create another class Instatntiate 
+9.here 1st create object of sub class and add the actual values using setters method.
+10.next create object of main class and add the values and the objects of sub class.
+11.print the main class object.

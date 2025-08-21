@@ -1,0 +1,61 @@
+. how to add the payload in the body of the class
+
+public static void create_order()
+	{
+		RestAssured.baseURI = "https://petstore.swagger.io/v2/";
+		String response = given()
+		.log()
+		.all()
+		.header("accept","application/json")
+		.header("Content-Type","application/json")
+		.body("{\r\n"
+				+ "  \"id\": 1,\r\n"
+				+ "  \"petId\": 3,\r\n"
+				+ "  \"quantity\": 20,\r\n"
+				+ "  \"shipDate\": \"2024-12-14T15:53:45.452Z\",\r\n"
+				+ "  \"status\": \"available\",\r\n"
+				+ "  \"complete\": true\r\n"
+				+ "}")
+		.when()
+		.post("store/order")
+		.then()
+		.log()
+		.all()
+		.assertThat()
+		.statusCode(200).extract().response().asString();
+	2. How to add the payload from another class?
+	return "{\r\n"
+				+ "  \"id\": 1,\r\n"
+				+ "  \"petId\": 3,\r\n"
+				+ "  \"quantity\": 20,\r\n"
+				+ "  \"shipDate\": \"2024-12-14T15:53:45.452Z\",\r\n"
+				+ "  \"status\": \"available\",\r\n"
+				+ "  \"complete\": true\r\n"
+				+ "}";
+	3. how to optimize the payload method to take user inputs to populate the payload method?
+	public static String Optimizedpayload(int orderid,int petid,int quantity,String status,boolean iscomplete)
+	{
+		return "{\r\n"
+				+ "  \"id\": "+orderid+",\r\n"
+				+ "  \"petId\": "+petid+",\r\n"
+				+ "  \"quantity\": "+quantity+",\r\n"
+				+ "  \"shipDate\": \"2024-12-14T15:53:45.452Z\",\r\n"
+				+ "  \"status\": \""+status+"\",\r\n"
+				+ "  \"complete\": "+iscomplete+"\r\n"
+				+ "}";
+	4. how to add or read payload from external file?
+	{
+  "id": 1,
+  "petId": 3,
+  "quantity": 20,
+  "shipDate": "2024-12-14T15:53:45.452Z",
+  "status": "available",
+  "complete": true
+} Seperate file CreateOrder.json
+	String filepath = "..\\API_Testing\\src\\test\\resources\\JSON Files\\CreateOrder.json";
+	
+5. Reading JSON data from external files excel using Apache POI.
+	add the Dependancy for APache poi in pom.xml file.
+		String jsonpayload = new String(Files.readString(Paths.get(filepath)));
+6.Deserialization --->Reading Json files into java classes.
+serialization - converting java classes to JSON 

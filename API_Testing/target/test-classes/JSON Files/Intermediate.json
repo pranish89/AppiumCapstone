@@ -1,0 +1,39 @@
+{
+	"employees": [
+		{
+	         "id" : 78,
+	         "name": "John Doe",
+	         "age": 30,
+	         "email": "Johndoe@example.com",
+	         "address" : {
+	         	"street" : "123 Main St",
+	         	"city": "newyork",
+	         	"zip" : "10001"
+	         	},
+	         "skills": [
+	         	"Java",
+	         	"Springboot",
+	         	"SQL"
+	         	]
+	      },         	
+	     
+	     {
+	         "id" : 12,
+	         "name": "Vin Diesel",
+	         "age": 30,
+	         "email": "vindiesel@example.com",
+	         "address" : {
+	         	"street" : "123 Main St",
+	         	"city": "pensylvania",
+	         	"zip" : "20089"
+	         	},
+	         "skills": [
+	         	"Rest Assured",
+	         	"Appium",
+	         	"Selenium"
+	         	]
+	      },         	
+	     
+	    
+	]
+}

@@ -1,0 +1,15 @@
+New order is created and the response has the correct User id  2
+The productid is 1 quantity is 2
+The productid is 2 quantity is 1
+New User is registered
+***************************************************************************
+Correct order information is retrieved with orderid 3
+***************************************************************************
+The cart of given orderid is deleted successfully 3
+***************************************************************************
+
+===============================================
+Suite
+Total tests run: 5, Passes: 5, Failures: 0, Skips: 0
+===============================================
+

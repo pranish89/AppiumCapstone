@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test_user_order">
+		<parameter name="order_create_userid" value="2"></parameter>
+		<parameter name="order_retrieve_id" value="3"></parameter>
+		<parameter name="order_delete_id" value="3"></parameter>
+		<classes>
+			<class name="fakeStoreAPI.UserManagement" />
+			<class name="fakeStoreAPI.OrderProcessing" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="Test_product">
+		<parameter name="product_retrieve_id" value="6"></parameter>
+		<parameter name="product_update_id" value="6"></parameter>
+		<parameter name="product_update_title" value="test_product"></parameter>
+		<parameter name="product_update_price" value="19.89"></parameter>
+		<parameter name="product_delete_id" value="6"></parameter>
+		<classes>
+			<class name="fakeStoreAPI.ProductManagement" />
+		</classes>
+	</test>
+		<test thread-count="5" name="Test_Error">
+		<classes>
+			<class name="fakeStoreAPI.ErrorHandling" />
+			<class name ="fakeStoreAPI.EdgeCaseHandling" />
+		</classes>
+	</test>
+		
+
+</suite> <!--
+Suite -->

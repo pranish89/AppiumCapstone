@@ -1,0 +1,18 @@
+{		
+	         "id" : 78,
+	         "name": "John Doe",
+	         "age": 30,
+	         "email": "Johndoe@example.com",
+	         "address" : {
+	         	"street" : "123 Main St",
+	         	"city": "newyork",
+	         	"zip" : "10001"
+	         	},
+	         "skills": [
+	         	"Java",
+	         	"Springboot",
+	         	"SQL"
+	         	]
+}         	
+	             	
+	     

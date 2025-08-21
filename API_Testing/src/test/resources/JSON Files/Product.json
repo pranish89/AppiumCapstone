@@ -1,0 +1,11 @@
+{
+	
+	         "id" : 105,
+	         "name": "Bluetooth Speaker",
+	         "price": 49.99,
+	         "category": {
+	         	"id" : 2,
+	         	"name" : "Electronics"
+	         }
+	
+}
