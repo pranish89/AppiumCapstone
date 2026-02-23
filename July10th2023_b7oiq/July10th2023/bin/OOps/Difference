@@ -1,0 +1,32 @@
+overLoading - 
+
+1. It happens in single class itself
+
+2. Same method signature but differs in the argument
+
+3. We can do over-loading with static methods and constructors
+
+4. It happens with static methods
+
+5. method calls get attached with the method body (Binding), so it happens during compilation time.
+
+6. Compilation time polymorphism
+
+7. Inheritance is not required
+
+overRiding - 
+
+1. It happens over multiple classes.
+
+2. Same method signature exists but differs in implementation.
+
+3. We can not override static methods and constructors
+
+4. It always happens with non-static methods
+
+5. Binding happens during execution phase, why --> because objects are needed for overriding and 
+they get created during execution phase only.
+
+6. Run-time polymorphism.
+
+7. 7. Inheritance is must.

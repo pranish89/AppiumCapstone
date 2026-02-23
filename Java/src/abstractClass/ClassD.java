@@ -30,7 +30,7 @@ abstract class ClassD {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-          //ClassD obj = new ClassD(); //objects cannot be created for ClassD since its abstract.
+         // ClassD obj = new ClassD(); //objects cannot be created for ClassD since its abstract.
 	}
 
 }

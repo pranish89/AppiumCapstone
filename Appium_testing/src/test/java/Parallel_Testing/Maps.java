@@ -75,11 +75,13 @@ public class Maps {
 		/*Assert.assertEquals("Destination does not match","London",Actual);
 		System.out.println(Actual +"Hard Assert Passed");*/
 		//Assert.assertEquals(expected, actual);
+	
 
 		//Soft Assert
 		SoftAssert soft = new SoftAssert();
 		soft.assertEquals(Actual, "Lodon", "Does'nt match");
 		//soft.assertEquals(actual,expected);
+		//soft.assertEq
 		System.out.println("Soft assert executed");
 
 

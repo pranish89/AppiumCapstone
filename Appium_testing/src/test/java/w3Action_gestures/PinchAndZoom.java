@@ -10,9 +10,11 @@ import org.openqa.selenium.interactions.Pause;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 
+import io.appium.java_client.android.AndroidDriver;
+
 public class PinchAndZoom {
 	
-	pinchandzoom()
+	public void pinchandzoom(AndroidDriver driver)
 	{
 		WebElement element;
 		Point centerOfElement = getCenterOfElement(element.getLocation(), element.getSize());

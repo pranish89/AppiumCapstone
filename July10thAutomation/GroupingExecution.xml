@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+	<test thread-count="5" name="Test">
+
+		<!-- <groups>
+
+			<run>
+				<include name="Regression Test"></include>
+				<exclude name="Smoke Test"></exclude>
+
+			</run>
+
+		</groups> -->
+
+		<classes>
+			<class name="TestCases.WindowHandlingTest"/>
+			<class name="package1.ClassTest" />
+			<class name="package1.CreateNewCustomerTest" />
+			<class name="package1.RealTest" />
+			<class name="package2.ModifyCustomerTest" />
+			<class name="FileHandling.FileHandling" />
+			<class name="package2.NewTest" />
+			<class name="package1.RegistrationTest" />
+			<class name="package3.PreserveOrderTest" />
+			<class name="package2.EnabledAndDisbaledTest" />
+			<class name="ScreenShots.ScreenShot" />
+			<class name="TestCases.FileAndFramehandlingTest" />
+			<class name="package1.LoginTest" />
+			<class name="package3.DependsOnTest" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

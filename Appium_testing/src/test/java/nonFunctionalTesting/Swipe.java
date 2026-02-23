@@ -26,6 +26,7 @@ public class Swipe {
 			int edgeborder=10;
 			PointOption pointstart,pointend;
 			Dimension dim = driver.manage().window().getSize();
+			
 			pointstart = PointOption.point(dim.width/2, dim.height/2);
 			switch(direction)
 			{

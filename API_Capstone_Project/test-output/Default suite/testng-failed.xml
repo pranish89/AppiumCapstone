@@ -5,8 +5,6 @@
     <classes>
       <class name="goRestAPI.Posts">
         <methods>
-          <include name="get_posts_by_userid"/>
-          <include name="get_posts_by_id"/>
           <include name="create_post"/>
         </methods>
       </class> <!-- goRestAPI.Posts -->

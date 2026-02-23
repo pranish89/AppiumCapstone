@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="amazon.AddToWishlist"/>
-       <class name="amazon.AddToCart"/>
-      <class name="amazon.OrderDetails"/>
-      <class name="amazon.Payment"/>
+      <class name="flipkart.AddToWishlist"/>
+       <class name="flipkart.AddToCart"/>
+      <class name="flipkart.OrderDetails"/>
+      <class name="flipkart.Payment"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

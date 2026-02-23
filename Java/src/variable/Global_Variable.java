@@ -8,9 +8,9 @@ public class Global_Variable {
 	int i;
 	static float j;
 	static double k;
-	static char ch;
+	final static char ch ='A';
 	static boolean state;
-	int x=20;
+	final int x=20;
 	//i=10; global variable should be declared and initialized in same line.
 	
 

@@ -1,0 +1,25 @@
+package package1;
+
+import org.testng.annotations.Test;
+
+public class RegistrationTest {
+
+	@Test
+	public void registration() {
+		System.out.println("Running in registration()");
+	}
+	
+	@Test
+	public void automaiton() {
+		System.out.println("Running in automaiton()");
+		System.out.println(Thread.currentThread().getId());
+
+	}
+	
+	// only allowed special characters in java
+	
+	@Test
+	public void _$_$_$_$_$_$_$_$() {
+		
+	}
+}

@@ -1,9 +1,18 @@
 package w3Action_gestures;
 
+import java.time.Duration;
+import java.util.Collections;
+
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Pause;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
+
+import io.appium.java_client.android.AndroidDriver;
 
 public class Swipe {
-swipe()
+public void swipe(AndroidDriver driver)
 {
 	Dimension size = driver.manage().window().getSize();
     int startX = size.getWidth() / 2;
@@ -20,7 +29,7 @@ swipe()
     driver.perform(Collections.singletonList(sequence));
 }
 
-}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

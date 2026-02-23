@@ -5,6 +5,7 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 
 
@@ -23,6 +24,8 @@ public class setup_appium {
 			
 			//point at the running server
 			URL server = new URL("http://127.0.0.1:4723/wd/hub");
+			
+			//URL server1= 
 			
 			//driver creation
 			AndroidDriver driver = new AndroidDriver(server,option);

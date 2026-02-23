@@ -39,7 +39,8 @@ public class touchAction {
 		
 		TouchAction ta = new TouchAction(driver);
 		//Tap_calculator Action
-		ta.tap(PointOption.point(427,854)).perform();
+		ta.
+		tap(PointOption.point(427,854)).perform();
 		System.out.println("Tap_calculator on United States");
 		
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

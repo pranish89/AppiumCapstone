@@ -33,7 +33,8 @@ public class Calculator {
 				//digit +
 				driver.findElement(By.id("com.google.android.calculator:id/op_add")).click();
 				//digit 8
-				driver.findElement(By.id("com.google.android.calculator:id/digit_8")).click();
+				driver.findElement(By.
+						id("com.google.android.calculator:id/digit_8")).click();
 				//digit =
 			//	driver.findElement(By.id("com.google.android.calculator:id/eq")).click();
 

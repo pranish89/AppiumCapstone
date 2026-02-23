@@ -8,22 +8,41 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">57,450</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">3</td><td class="num">78,545</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">amazon.Payment</td><td><a href="#m0">search_products</a></td><td rowspan="1">1755601538800</td><td rowspan="1">45799</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">flipkart.AddToWishlist</td><td><a href="#m0">login</a></td><td rowspan="1">1756984911550</td><td rowspan="1">42052</td></tr><tr class="failedodd"><td rowspan="1">flipkart.Payment</td><td><a href="#m1">logout</a></td><td rowspan="1">1756984968915</td><td rowspan="1">11608</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">flipkart.AddToCart</td><td><a href="#m2">search_products</a></td><td rowspan="1">1756984953621</td><td rowspan="1">3168</td></tr><tr class="failedodd"><td rowspan="1">flipkart.OrderDetails</td><td><a href="#m3">order_details</a></td><td rowspan="1">1756984956793</td><td rowspan="1">6976</td></tr><tr class="failedeven"><td rowspan="1">flipkart.Payment</td><td><a href="#m4">search_products</a></td><td rowspan="1">1756984963771</td><td rowspan="1">5142</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">flipkart.Payment</td><td><a href="#m5">tear_down</a></td><td rowspan="1">1756984980525</td><td rowspan="1">-1756984980525</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">flipkart.AddToWishlist</td><td><a href="#m6">search_by_image</a></td><td rowspan="1">1756984953617</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">amazon.Payment#search_products</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+<h2>Test</h2><h3 id="m0">flipkart.AddToWishlist#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [5d5a9a43-b494-40e3-b1a6-d367f7a37407, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;Deliver to: &apos;]}]
+Command: [63a33845-2dcb-402c-831b-e35b2b6f9360, findElement {using=id, value=com.flipkart.android:id/otp_view}]
 Capabilities {appium:appActivity: com.flipkart.android.activi..., appium:appPackage: com.flipkart.android, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:chromedriverExecutable: ..\ChromeDriver\chromedrive..., appium:databaseEnabled: false, appium:desired: {appActivity: com.flipkart.android.activi..., appPackage: com.flipkart.android, autoGrantPermissions: true, automationName: UiAutomator2, chromedriverExecutable: ..\ChromeDriver\chromedrive..., deviceName: HA23P8P0, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: LENOVO, appium:deviceModel: TB330XUP, appium:deviceName: HA23P8P0, appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1200x1920, appium:deviceUDID: HA23P8P0, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 1.5, appium:platformVersion: 15, appium:statBarHeight: 59, appium:takesScreenshot: true, appium:viewportRect: {height: 1861, left: 0, top: 59, width: 1200}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 5d5a9a43-b494-40e3-b1a6-d367f7a37407
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Session ID: 63a33845-2dcb-402c-831b-e35b2b6f9360
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at flipkart.BaseClass.login(BaseClass.java:81)
+	at flipkart.AddToWishlist.login(AddToWishlist.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">flipkart.Payment#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [63a33845-2dcb-402c-831b-e35b2b6f9360, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc=&apos;Log Out&apos;]}]
+Capabilities {appium:appActivity: com.flipkart.android.activi..., appium:appPackage: com.flipkart.android, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:chromedriverExecutable: ..\ChromeDriver\chromedrive..., appium:databaseEnabled: false, appium:desired: {appActivity: com.flipkart.android.activi..., appPackage: com.flipkart.android, autoGrantPermissions: true, automationName: UiAutomator2, chromedriverExecutable: ..\ChromeDriver\chromedrive..., deviceName: HA23P8P0, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: LENOVO, appium:deviceModel: TB330XUP, appium:deviceName: HA23P8P0, appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1200x1920, appium:deviceUDID: HA23P8P0, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 1.5, appium:platformVersion: 15, appium:statBarHeight: 59, appium:takesScreenshot: true, appium:viewportRect: {height: 1861, left: 0, top: 59, width: 1200}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 63a33845-2dcb-402c-831b-e35b2b6f9360
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -34,33 +53,95 @@ Session ID: 5d5a9a43-b494-40e3-b1a6-d367f7a37407
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at amazon.Payment.search_products(Payment.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at flipkart.BaseClass.logout(BaseClass.java:112)
+	at flipkart.Payment.logout(Payment.java:121)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">flipkart.AddToCart#search_products</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [63a33845-2dcb-402c-831b-e35b2b6f9360, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc=&apos;Categories&apos;]}]
+Capabilities {appium:appActivity: com.flipkart.android.activi..., appium:appPackage: com.flipkart.android, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:chromedriverExecutable: ..\ChromeDriver\chromedrive..., appium:databaseEnabled: false, appium:desired: {appActivity: com.flipkart.android.activi..., appPackage: com.flipkart.android, autoGrantPermissions: true, automationName: UiAutomator2, chromedriverExecutable: ..\ChromeDriver\chromedrive..., deviceName: HA23P8P0, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: LENOVO, appium:deviceModel: TB330XUP, appium:deviceName: HA23P8P0, appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1200x1920, appium:deviceUDID: HA23P8P0, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 1.5, appium:platformVersion: 15, appium:statBarHeight: 59, appium:takesScreenshot: true, appium:viewportRect: {height: 1861, left: 0, top: 59, width: 1200}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 63a33845-2dcb-402c-831b-e35b2b6f9360
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at flipkart.AddToCart.search_products(AddToCart.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">flipkart.OrderDetails#order_details</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [63a33845-2dcb-402c-831b-e35b2b6f9360, findElement {using=xpath, value=//android.widget.TextView[@text=&apos;Orders&apos;]}]
+Capabilities {appium:appActivity: com.flipkart.android.activi..., appium:appPackage: com.flipkart.android, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:chromedriverExecutable: ..\ChromeDriver\chromedrive..., appium:databaseEnabled: false, appium:desired: {appActivity: com.flipkart.android.activi..., appPackage: com.flipkart.android, autoGrantPermissions: true, automationName: UiAutomator2, chromedriverExecutable: ..\ChromeDriver\chromedrive..., deviceName: HA23P8P0, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: LENOVO, appium:deviceModel: TB330XUP, appium:deviceName: HA23P8P0, appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1200x1920, appium:deviceUDID: HA23P8P0, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 1.5, appium:platformVersion: 15, appium:statBarHeight: 59, appium:takesScreenshot: true, appium:viewportRect: {height: 1861, left: 0, top: 59, width: 1200}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 63a33845-2dcb-402c-831b-e35b2b6f9360
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at flipkart.OrderDetails.order_details(OrderDetails.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">flipkart.Payment#search_products</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [63a33845-2dcb-402c-831b-e35b2b6f9360, findElement {using=xpath, value=//android.view.ViewGroup[@content-desc=&apos;Categories&apos;]}]
+Capabilities {appium:appActivity: com.flipkart.android.activi..., appium:appPackage: com.flipkart.android, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:chromedriverExecutable: ..\ChromeDriver\chromedrive..., appium:databaseEnabled: false, appium:desired: {appActivity: com.flipkart.android.activi..., appPackage: com.flipkart.android, autoGrantPermissions: true, automationName: UiAutomator2, chromedriverExecutable: ..\ChromeDriver\chromedrive..., deviceName: HA23P8P0, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: LENOVO, appium:deviceModel: TB330XUP, appium:deviceName: HA23P8P0, appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1200x1920, appium:deviceUDID: HA23P8P0, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 1.5, appium:platformVersion: 15, appium:statBarHeight: 59, appium:takesScreenshot: true, appium:viewportRect: {height: 1861, left: 0, top: 59, width: 1200}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 63a33845-2dcb-402c-831b-e35b2b6f9360
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at flipkart.Payment.search_products(Payment.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">flipkart.Payment#tear_down</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">flipkart.AddToWishlist#search_by_image</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [63a33845-2dcb-402c-831b-e35b2b6f9360, findElement {using=id, value=com.flipkart.android:id/otp_view}]
+Capabilities {appium:appActivity: com.flipkart.android.activi..., appium:appPackage: com.flipkart.android, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:chromedriverExecutable: ..\ChromeDriver\chromedrive..., appium:databaseEnabled: false, appium:desired: {appActivity: com.flipkart.android.activi..., appPackage: com.flipkart.android, autoGrantPermissions: true, automationName: UiAutomator2, chromedriverExecutable: ..\ChromeDriver\chromedrive..., deviceName: HA23P8P0, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: LENOVO, appium:deviceModel: TB330XUP, appium:deviceName: HA23P8P0, appium:deviceScreenDensity: 240, appium:deviceScreenSize: 1200x1920, appium:deviceUDID: HA23P8P0, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 1.5, appium:platformVersion: 15, appium:statBarHeight: 59, appium:takesScreenshot: true, appium:viewportRect: {height: 1861, left: 0, top: 59, width: 1200}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 63a33845-2dcb-402c-831b-e35b2b6f9360
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at flipkart.BaseClass.login(BaseClass.java:81)
+	at flipkart.AddToWishlist.login(AddToWishlist.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

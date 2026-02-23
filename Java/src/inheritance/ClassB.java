@@ -33,8 +33,8 @@ public class ClassB extends ClassA {
 															// variables visible in child class
 		obj.display();// same method name in both parent n child, only child method visible in child
 						// class.
-		obj.displayparent();
-
+		//obj.displayparent();
+		
 	}
 
 }

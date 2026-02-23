@@ -25,7 +25,7 @@ public class Helper {
 	private String wait;
 	private static int max_wait_time;
 	private static int min_wait_time;
-	static File file = new File("..\\Automation_Capstone_Project\\TestData\\TestData.xlsx");
+	static File file = new File("..\\Appium_Capstone\\TestData\\TestData.xlsx");
 
 	@SuppressWarnings({ "deprecation" })
 	private Helper() throws Exception {

@@ -15,12 +15,13 @@ public class Assertion {
 		System.out.println("Concanted String is " +concat);
 		
 		//Hard assert
-		//Assert.assertEquals(concat,"india tamilnadu" ,"Sstring is not equal"); (failure msg, expected,actual)
-		//Assert.assertEquals("String is not equal","india tamilnadu",concat);
+		//Assert.assertEquals(concat,"india tamilnadu" ,"Sstring is not equal"); 
+		//(failure msg, expected,actual)
+		Assert.assertEquals("String is not equal","india tamilnadu",concat);
 		
 		//Soft Assert
 		SoftAssert soft = new SoftAssert();
-		//soft.assertEquals(concat, "india tamilnadu", "not equal");
+		soft.assertEquals(concat, "india tamilnadu", "not equal");
 		
 		//AssertNull
 		

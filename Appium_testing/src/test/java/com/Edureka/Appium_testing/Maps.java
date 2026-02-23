@@ -59,7 +59,8 @@ public class Maps {
 		
 		//Sending input on the search box
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(4));
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText[@text='Search here']")));
+		wait.until(ExpectedConditions.
+				elementToBeClickable(By.xpath("//android.widget.EditText[@text='Search here']")));
 		driver.findElement(By.xpath("//android.widget.EditText[@text='Search here']")).sendKeys("London");	
 		List<WebElement> results = driver.findElements(By.xpath("//*[@class = 'android.support.v7.widget.RecyclerView']//child::*"));
 		for(WebElement temp:results)
@@ -72,6 +73,8 @@ public class Maps {
 
 			}
 
+			
+			
 		}
 		//HArd Assert
 		/*Assert.assertEquals("Destination does not match","London",Actual);

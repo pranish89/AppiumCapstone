@@ -7,7 +7,6 @@ public class Bikes implements Vehicle{
 	double power;
 	
 
-	@Override
 	public void setter(String a, double b, double c) {
 		
 		 bike_name=a;
@@ -15,7 +14,6 @@ public class Bikes implements Vehicle{
 		 power= c;
 			}
 
-	@Override
 	public void getter() {
 		
 		System.out.println("The Performance of bike " +bike_name +"\n" +"Mileage is " +mileage +"\n" +"Power is " +power);

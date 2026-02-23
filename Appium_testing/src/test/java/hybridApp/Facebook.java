@@ -45,7 +45,8 @@ public class Facebook {
 	@Test(priority=1)
 	public void enterUrl() throws InterruptedException {
 		
-		WebElement search = driver.findElement(By.id("com.android.chrome:id/search_box_text"));
+		WebElement search = driver.findElement(AppiumBy.
+				By.id("com.android.chrome:id/search_box_text"));
 		//WebElement search = driver.findElement(By.xpath("//android.widget.EditText[@text = 'Search or type URL']"));
 		search.click();
 		Thread.sleep(3000);

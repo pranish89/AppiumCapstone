@@ -14,7 +14,7 @@ public class ClassA {
 	{
 		System.out.println("Paremetrized construtor");
 	}
-	public void displayparent() {
+	public void display() {
 		System.out.println("display parent");
 	}
 	
@@ -22,7 +22,7 @@ public class ClassA {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
       ClassA obj = new ClassA();
-      obj.displayparent();
+      obj.display();
       
 	}
 

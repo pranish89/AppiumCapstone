@@ -51,7 +51,7 @@ public class Screenshot {
 		new File(dest_path).mkdirs();
 		String dest_file = dateformat.format(new Date()) + ".png";
 		//try {
-		FileUtils.copyFile(sourceFile, destinationFile);
+		FileUtils.copyFile(src, dest_file);
 		
 		}
 		

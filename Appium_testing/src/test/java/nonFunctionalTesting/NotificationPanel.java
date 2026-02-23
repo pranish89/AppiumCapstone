@@ -8,6 +8,7 @@ import org.openqa.selenium.DeviceRotation;
 import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidBatteryInfo;
@@ -63,6 +64,8 @@ public class NotificationPanel {
 		boolean var = true;
 		boolean health_check = (b.getLevel()>min && state.equals(b.getState().toString()));
 		Assert.assertEquals(health_check, var, "Does not match");
+		SoftAssert a= new SoftAssert();
+		
 	}
 	
 	public void rotate() {

@@ -52,7 +52,7 @@ public class Posts {
 
 		Response response = given().log().all().header("accept", "application/json")
 				.header("Content-Type", "application/json").header("Authorization", "Bearer " + Constants.access_token)
-				.when().get("/users/"+user_id +"/posts").then().log().all().assertThat().statusCode(200).extract()
+				.when().get("/users/"+user_id+"/posts").then().log().all().assertThat().statusCode(200).extract()
 				.response();
 		
 		int id_response = response.jsonPath().getInt("user_id[0]");
@@ -62,7 +62,7 @@ public class Posts {
 		}
 	}
 		
-	//	@Test
+		@Test
 		@Parameters ({"userid"})
 		public void create_post(int id)		
 		{
