@@ -21,7 +21,6 @@ public class Login {
     
     //WebDriver driver = DriverFactory.getDriver();
 
-    // ================= GIVEN =================
     
     @Given("User naviagtes to the amazon home page")
     public void user_navigate_amazon()
@@ -41,7 +40,6 @@ public class Login {
         ExtentManager.getTest().info("User navigated to login page");
     }
 
-    // ================= PARAMETERIZED LOGIN =================
 
     @When("user enters username")
     public void user_enters_username(){
@@ -65,7 +63,6 @@ public class Login {
         ExtentManager.getTest().info("Entered password");
     }
 
-    // ================= JSON DRIVEN LOGIN =================
 
    
 
