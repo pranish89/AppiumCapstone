@@ -11,20 +11,13 @@ public class ConfigReader {
 
     private static final Logger log = LogManager.getLogger(ConfigReader.class);
     private static Properties prop = new Properties();
-    private static final String CONFIG_PATH =
+    private static final String configpath =
             System.getProperty("user.dir") + "/src/test/resources/config/config.properties";
 
-    // ================= STATIC BLOCK =================
-
-    static {
-        loadProperties();
-    }
-
-    // ================= LOAD =================
 
     private static void loadProperties() {
 
-        try (InputStream input = new FileInputStream(CONFIG_PATH)) {
+        try (FileInputStream input = new FileInputStream(configpath)) {
 
             prop.load(input);
             log.info("Config file loaded successfully");
@@ -35,7 +28,6 @@ public class ConfigReader {
         }
     }
 
-    // ================= GET VALUE =================
 
     public static String get(String key) {
 
@@ -49,14 +41,12 @@ public class ConfigReader {
         return value.trim();
     }
 
-    // ================= GET INT =================
 
     public static int getInt(String key) {
 
         return Integer.parseInt(get(key));
     }
 
-    // ================= GET BOOLEAN =================
 
     public static boolean getBoolean(String key) {
 
