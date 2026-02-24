@@ -20,7 +20,6 @@ public class Hooks {
 
         ExtentTest test = extent.createTest(scenario.getName());
 
-        // ⭐ THIS IS WHERE WE SET THE TEST
         ExtentManager.setTest(test);
     }
 
