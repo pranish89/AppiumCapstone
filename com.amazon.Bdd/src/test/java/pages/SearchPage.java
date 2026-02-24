@@ -32,7 +32,6 @@ public class SearchPage {
 	private By searchBox = By.id("twotabsearchtextbox");
     private By searchBtn = By.id("nav-search-submit-button");
     private By suggestions = By.xpath("//div[@role='button']//span");
-    private By resultsContainer = By.cssSelector("div.s-main-slot");
     private By sortDropdown = By.id("s-result-sort-select");
 
     
