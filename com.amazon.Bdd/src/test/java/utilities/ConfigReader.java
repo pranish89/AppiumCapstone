@@ -14,6 +14,11 @@ public class ConfigReader {
     private static final String configpath =
             System.getProperty("user.dir") + "/src/test/resources/config/config.properties";
 
+    static
+    {
+        loadProperties();
+    }
+
 
     private static void loadProperties() {
 
