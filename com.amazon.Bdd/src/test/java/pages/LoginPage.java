@@ -21,7 +21,7 @@ import utilities.ConfigReader;
 
 	    private static final Logger log = LogManager.getLogger(LoginPage.class);
 
-	    // ================= LOCATORS =================
+
 
 	    @FindBy(id = "nav-link-accountList")
 	    private WebElement signInHover;
@@ -44,7 +44,7 @@ import utilities.ConfigReader;
 	    @FindBy(id = "nav-logo-sprites")
 	    private WebElement amazonLogo;
 
-	    // ================= CONSTRUCTOR =================
+
 
 	    public LoginPage(WebDriver driver) {
 	        this.driver = driver;
@@ -52,7 +52,7 @@ import utilities.ConfigReader;
 	        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	    }
 
-	    // ================= ACTION METHODS =================
+	 
 
 	    public void clickSignInFromHome() {
 	        log.info("Clicking Sign in from home page");
@@ -100,7 +100,6 @@ import utilities.ConfigReader;
 	        signInSubmit.click();
 	    }
 
-	    // ================= VALIDATION =================
 
 	    public boolean isHomePageDisplayed() {
 	        log.info("Validating Amazon home page");
@@ -114,7 +113,6 @@ import utilities.ConfigReader;
 	        }
 	    }
 
-	    // ================= COMBINED LOGIN =================
 
 	    public void loginToAmazon(String username, String password) {
 	        clickSignInFromHome();
